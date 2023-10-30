@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ <path>flaps.ac</path>
+  
+<!--Стрелка-->
+ <animation>
+  <type>rotate</type>
+  <object-name>needle</object-name>
+  <property>/fdm/jsbsim/fcs/flap-pos-deg</property>
+   <interpolation>
+    <entry><ind>0.0</ind><dep>-50.0</dep></entry>
+    <entry><ind>5.0</ind><dep>-40.0</dep></entry>
+    <entry><ind>15.0</ind><dep>-25.0</dep></entry>
+    <entry><ind>30.0</ind><dep>0.0</dep></entry>
+    <entry><ind>60.0</ind><dep>50.0</dep></entry>
+   </interpolation>
+    <center>
+     <x-m>0.000</x-m>
+     <y-m>-0.006</y-m>
+     <z-m>0.000</z-m>
+    </center>
+    <axis>
+     <x>-1.0</x>
+     <y>0.0</y>
+     <z>0.0</z>
+    </axis>
+ </animation>
+
+</PropertyList>

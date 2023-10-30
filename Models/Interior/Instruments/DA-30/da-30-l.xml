@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+
+<!-- Variometer/ Roll/Slip-Indicator DA-30
+Dimensions: 86x96,6x190mm
+ -->
+<PropertyList>
+
+ <path>da-30.ac</path>
+
+<!-- VS-Needle -->
+<animation>
+    <type>rotate</type>
+    <object-name>da-30_vs-needle</object-name>
+    <property>instrumentation/vertical-speed-indicator[0]/indicated-speed-fpm</property>
+    <interpolation>
+  	<entry><ind>	5708.66</ind>	<dep>	173.0</dep></entry><!--29m/s-->
+	<entry><ind>	3937.0</ind>	<dep>	142.0</dep></entry><!--20m/s-->
+	<entry><ind>	1968.5</ind>	<dep>	82.0</dep></entry><!--10m/s-->
+	<entry><ind>	984.25</ind>	<dep>	42.0</dep></entry><!--5m/s-->
+	<entry><ind>	0.0</ind>	<dep>	0.0</dep></entry>
+        <entry><ind>	-984.25</ind>	<dep>	-42.0</dep></entry>
+        <entry><ind>	-1968.5</ind>	<dep>	-82.0</dep></entry>
+        <entry><ind>	-3937.0</ind>	<dep>	-142.0</dep></entry>
+        <entry><ind>	-5708.66</ind>	<dep>	-172.0</dep></entry>
+    </interpolation>
+    <axis>
+      <x>-1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+</animation>
+
+<!-- Roll-Needle -->
+<animation>
+    <type>rotate</type>
+    <object-name>da-30_roll-needle</object-name>
+    <property>instrumentation/AGB-3K/indicated-roll-deg</property>
+    <interpolation>
+	<entry><ind>45</ind> <dep>25</dep></entry>
+	<entry><ind>30</ind> <dep>17</dep></entry>
+	<entry><ind>15</ind> <dep>8</dep></entry>
+	<entry><ind>0</ind> <dep>0</dep></entry>
+	<entry><ind>-15</ind><dep>-8</dep></entry>
+	<entry><ind>-30</ind> <dep>-17</dep></entry>
+	<entry><ind>-45</ind> <dep>-25</dep></entry>
+    </interpolation>
+    <center>
+      <x-m>0.0</x-m>
+      <y-m>0.0</y-m>
+      <z-m>-0.0287</z-m>
+    </center>
+    <axis>
+      <x>-1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+</animation>
+
+<!-- Slip -->
+<animation>
+  <type>rotate</type>
+  <object-name>da-30_ball</object-name>
+  <property>instrumentation/slip-skid-ball/indicated-slip-skid</property>
+  <interpolation>
+    <entry><ind>	-10.0</ind>	<dep>	-10.0</dep></entry>
+    <entry><ind>	10.0</ind>	<dep>	10.0</dep></entry>
+  </interpolation>
+  <center>
+    <x-m>0.0</x-m>
+    <y-m>0.0</y-m>
+    <z-m>0.07</z-m>
+  </center>
+  <axis>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+</PropertyList>

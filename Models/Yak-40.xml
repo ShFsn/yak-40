@@ -46,7 +46,7 @@
   <object-name>fuselage</object-name>
  </animation>
 
- <animation>
+ <!--<animation>
   <type>select</type>
   <object-name>exterior</object-name>
   <condition>
@@ -54,7 +54,7 @@
      <property>sim/current-view/internal</property>
     </not>
   </condition>
- </animation>
+ </animation>-->
 
 <!--***** SURFACES *****-->
 <!-- Elevators -->
